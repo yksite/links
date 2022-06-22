@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.header-row,
+.link-row {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+.header-row {
+    margin-top: 1rem;
+    padding: 0.8rem;
+
+    font-size: 3.5rem;
+}
+
+.link-row {
+    background-color: #444;
+
+    margin-top: 1rem;
+    border-radius: 0.3rem;
+    padding: 0.8rem;
+
+    font-size: 1.5rem;
+    overflow: hidden;
+
+    transition: all .2s ease-in-out;
+}
+.link-row:hover {
+    background-color: #555;
+    opacity: 1;
+
+    transform: scale(1.03);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .header-row,
+    .link-row {
+        width: 90%;
+    }
+    .header-row {
+        font-size: 2.5rem;
+    }
+    .link-row {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
